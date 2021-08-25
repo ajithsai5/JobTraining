@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>OPTUM</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<script>
+function showData(){
+var userName = document.getElementById("uname").value;
+var gender = document.forms[0].gender.value;
+var branch = document.getElementById("State").value;
+
+
+alert("USER NAME= "+userName+"\nGENDER= "+gender+"\nBRANCH= "+ branch);
+}
+
+
+
+</script>
+</head>
+<body>
+
+<header>
+  <h2>OPTUM</h2>
+</header>
+
+<section>
+<article>
+    <h1>HAPPINESS</h1>
+    <p>There is no one hard and fast definition for the term happiness. Happiness differs from person to person; different people have different perceptions and conceptions of being happy. </p>
+    <p>Whatever that may be, Happiness is an essential feature of human life.</p>
+	<p> Without it, life holds no meaning at all. It is not possible at all for a person to live their lives devoid of joy and Happiness.</p>
+	<p>The key to happiness lies in doing what one loves.</p>
+	<p> Irrespective of what the society imposes on us, we must indulge in only that which makes us feel happy and joyous.</p>
+</article>
+  
+ <nav>
+    <img src="https://www.bradaronson.com/wp-content/uploads/2013/10/happy.jpg" alt="W3Schools.com" style="float:right;width:100%;height:300px;">
+</nav>
+</section><br><br>
+  
+  
+<section>
+<form>
+<fieldset>
+<legend>Personal information:</legend>
+NAME:<input type="text" id="uname"/><br>
+<h3>GENDER:</h3>
+MALE:<input type="radio" name="gender" value="Male">
+FEMALE:<input type="radio" name="gender" value="Female"><br><br>
+  <label for="State">Choose a Branch:</label>
+  <select id="State" name="State">
+    <option value="US">United States</option>
+    <option value="Colombia">Colombia</option>
+    <option value="UK">UK</option>
+    <option value="India">India</option>
+	<option value="Philippines">Philippines</option>
+  </select><br><br>
+<button type="button" onclick="showData()">Submit</button>
+</fieldset>
+</form><br><br>
+
+ <aside>
+<table style="width:100%">
+  <tr>
+    <th>NAME</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>K.James</td>
+    <td>342-453-2341</td>
+    <td>United States</td>
+  </tr>
+  <tr>
+    <td>J.Robert</td>
+    <td>398-234-6321</td>
+    <td>Colombia</td>
+  </tr>
+  <tr>
+    <td>K.Michael</td>
+    <td>390-647-3872</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>S.Elizabeth</td>
+    <td>445-397-9873</td>
+    <td>India</td>
+  </tr>
+</table>
+</aside><br><br>
+
+<aside1>
+<h1>List that can make you Happy</h1>
+<ul>
+  <li>Improved Heart Health.</li>
+  <li>Ability to Combat Stress More Effectively.</li>
+  <li>A Stronger Immune System.</li>
+  <li>Overall Healthier Lifestyle.</li>
+  <li>Having time to myself.</li>
+  <li>Increased Life Longevity.</li>
+</ul>
+
+</aside1>
+</section><br><br>
+
+<footer>
+  <p>A happy life exudes positivity and joy</p>
+</footer>
+
+</body>
+</html>
