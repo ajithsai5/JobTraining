@@ -1,0 +1,105 @@
+public static Map<String, Integer> getEmployeeList() {
+		Map<String, Integer> namelist= new HashMap<String, Integer>();
+		namelist.put("Zara", new Integer(001732457));
+		namelist.put("Mahnaz",new Integer(001732451));
+		namelist.put("Ayan", new Integer(001732453));
+		namelist.put("Daisy", new Integer(001732327));
+		return(namelist);
+          }
+	
+	
+	public void printEmployee(Map<String, Integer> namelist) {
+		for (Map.Entry<String, Integer> me : namelist.entrySet()) {
+			System.out.print("Employee Name"+me.getKey() + ": ");
+			System.out.println(" Employee ID= "+me.getValue());
+			}
+          }
+	
+	
+	public void findEmployee(Map<String, Integer> namelist) {
+		System.out.println("The Value is: " + namelist.get("Mahnaz"));
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 	myemp.setName("John");
+    	myemp.setID("001734123");
+    	myemp.setName("Zara");
+    	myemp.setID("001732457");
+    	myemp.setName("Mahnaz");
+    	myemp.setID("001732451");
+    	myemp.setName("Ayan");
+    	myemp.setID("001732453");
+    	myemp.setName("Daisy");
+    	myemp.setID("001732327");
+    	System.out.print("Employee Name  :Employee ID \n");
+        System.out.print(myemp.getName() + ":");
+		System.out.println(myemp.getID());
+	
+	
+	
+	
+	
+	package com.employee.mgmt.entities;
+import java.util.HashMap;
+import java.util.Map;
+public class Employee {
+	private String[] Name;
+	private String[] ID;
+	public Employee(String[] myemp, String[] myemp2) {
+		super();
+		this.Name = myemp;
+		this.ID = myemp2;
+	}
+	public void getName() {
+		for (int i = 0; i < this.Name.length; i++) {
+	        System.out.print(this.Name[i] + " \t");
+	    }
+	    System.out.println();
+	}
+	public void getID() {
+		for (int i = 0; i < this.ID.length; i++) {
+	        System.out.print(this.ID[i] + "\t ");
+	    }
+	    System.out.println("");
+	}
+	public Map<String, String> map() {
+		Map<String, String> map = new HashMap<String, String>();
+		for (int i = 0; i < this.Name.length; i++) {
+			map.put(ID[i], Name[i]);
+	    }
+		return(map);
+	}
+	public void findEmployee(Map<String, String> namelist) {
+		System.out.println("The Value is: " + namelist.get("001732457"));
+	}
+	
+}
+
+package com.employee.mgmt;
+import java.util.Map;
+import com.employee.mgmt.entities.Employee;
+public class EmployeeMgmtStart 
+{
+    public static void main( String[] args )
+    {
+    	String[] myemp = {"John", "Zara","Mahnaz","Ayan","Daisy",};
+    	String[] myemp1 = {"001734123","001732457","001732451","001732453","001732327"};
+    	Employee myemp3=new Employee(myemp,myemp1);
+    	System.out.print("Employee Name  :\t");
+        myemp3.getName();
+        System.out.print("Employee Id :\t");
+		myemp3.getID();
+		Map<String, String> namelist=myemp3.map();
+		System.out.println(namelist);
+		myemp3.findEmployee(namelist);
+    
+    }
+}
