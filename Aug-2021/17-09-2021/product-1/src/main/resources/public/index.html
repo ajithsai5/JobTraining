@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/co.js"></script>
+
+</head>
+<body>
+<div class="container">
+		<div class="col-md-12">
+			<form class="form-inline" method="get" action="/find">
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<a class="navbar-brand" href="#">OPTUM</a>
+						</div>
+						<ul class="nav nav-pills nav-fill">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="index.jsp">Find The Product Details</a></li>
+							<li><a href="GetTheData">Delete The Product Details</a></li>
+							<li><a href="GetData">Update The Product Details</a></li>
+						</ul>
+					</div>
+				</nav>
+				<legend>
+					<b>Find The Details of the Product :-</b>
+				</legend>
+				<div class="mb-12s">
+					<label for="productId" class="form-label">Product ID :-</label> <input
+						type="number" class="form-control is-valid " id="productId" name="productId"
+						placeholder="220345" required>
+				</div>
+				<br>
+				<div class="col-12">
+					<button class="btn btn-primary" type="submit" onclick="showData()">Find
+						The Product Details</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
